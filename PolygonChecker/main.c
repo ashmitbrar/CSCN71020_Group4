@@ -11,7 +11,7 @@ int main() {
 	while (continueProgram) {
 		printWelcome();
 
-		int shapeChoice = printShapeMenu();
+		int shapeChoice = printShapeMenu(); 
 
 		switch (shapeChoice)
 		{
