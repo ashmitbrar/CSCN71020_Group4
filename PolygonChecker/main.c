@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdio.h>
 #include <stdbool.h>
 
 #include "main.h"
@@ -9,7 +10,7 @@ int side = 0;
 int main() {
 	bool continueProgram = true;
 	while (continueProgram) {
-		printWelcome(); 
+		printWelcome();
 
 		int shapeChoice = printShapeMenu();
 
