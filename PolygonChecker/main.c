@@ -22,6 +22,7 @@ int main() {
 			//printf_s("! %d\n", triangleSidesPtr[0]);
 			char* result = analyzeTriangle(triangleSidesPtr[0], triangleSidesPtr[1], triangleSidesPtr[2]);
 			printf_s("%s\n", result);
+
 			break;
 		case 0:
 			continueProgram = false;
@@ -42,8 +43,10 @@ void printWelcome() {
 	printf_s(" **********************\n");
 }
 
+
 int printShapeMenu() {
 	printf_s("1. Triangle\n");
+	printf_s("2. MakeTriangle\n");
 	printf_s("0. Exit\n");
 
 	int shapeChoice;
@@ -54,11 +57,11 @@ int printShapeMenu() {
 	return shapeChoice;
 }
 
-int* getTriangleSides(int* triangleSides) {
+int* getTriangleSides(int* TriangleSides) {
 	printf_s("Enter the three sides of the triangle: ");
 	for (int i = 0; i < 3; i++)
 	{
-		scanf_s("%d", &triangleSides[i]);
+		scanf_s("%d", &TriangleSides[i]);
 	}
-	return triangleSides;
+	return TriangleSides;
 }
