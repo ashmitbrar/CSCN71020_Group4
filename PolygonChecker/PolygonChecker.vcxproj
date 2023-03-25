@@ -139,17 +139,10 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="calculateTriangleAngles.c" />
-    <ClCompile Include="getTrianglesSides.c" />
-    <ClCompile Include="isValidTriangle.c" />
     <ClCompile Include="main.c" />
     <ClCompile Include="triangleSolver.c" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="calculateTriangleAngles.h" />
-    <ClInclude Include="getTrianglesSides.h" />
-    <ClInclude Include="isValidTriangle.h" />
-    <ClInclude Include="main.h" />
     <ClInclude Include="triangleSolver.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
