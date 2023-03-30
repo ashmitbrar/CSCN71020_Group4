@@ -21,8 +21,7 @@ char* analyzeTriangle(float side1, float side2, float side3)
 		result = "Scalene triangle";
 	};
 
-
-	float angleA, angleB, angleC, R, s, pi, area;
+	float  angle1, angle2, angle3, R, s, pi, area;
 	pi = acos(-1);
 
 	s = (side1 + side2 + side3) / 2;
@@ -30,11 +29,10 @@ char* analyzeTriangle(float side1, float side2, float side3)
 
 	R = (side1 * side2 * side3) / (4 * area);
 
-	angleA = (180 / pi) * asin(side1 / 2 * R);
-	angleB = (180 / pi) * asin(side2 / 2 * R);
-	angleC = (180 / pi) * asin(side3 / 2 * R);
+	angle1 = (180 / pi) * asin(side1 / (2 * R));
+	angle2 = (180 / pi) * asin(side2 / (2 * R));
+	angle3 = (180 / pi) * asin(side3 / (2 * R));
 
-	//printf("%.2f %.2f %.2f", angleA, angleB, angleC);
 
 	if (side1 <= 0 && side2 <= 0 && side3 <= 0)
 	{
@@ -51,9 +49,21 @@ char* analyzeTriangle(float side1, float side2, float side3)
 	{
 
 		printf("Sides:  %d %d %d\n", side1, side2, side3);
-		printf("Angles: %.2f %.2f %.2f\n", angleA, angleB, angleC);
+		printf("Angles: %6.2f %6.2f %6.2f\n", angle1, angle2, angle3);
 	}
+
 	return result;
+};
+struct Rectangle
+{
+	int length;
+	int breadth;
+};
+int main()
+{
+	struct Rectangle r = { 10, 5 };
+	r.length = 20;
+	r.breadth = 30;
 }
 
 
