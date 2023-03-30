@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdbool.h>
 #include "triangleSolver.h"
-
+#include "main.h"
 int side = 0;
 
 int main() {
