@@ -46,7 +46,6 @@ void printWelcome() {
 
 int printShapeMenu() {
 	printf_s("1. Triangle\n");
-	printf_s("2. MakeTriangle\n");
 	printf_s("0. Exit\n");
 
 	int shapeChoice;
