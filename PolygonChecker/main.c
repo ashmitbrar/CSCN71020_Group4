@@ -3,6 +3,7 @@
 
 #include "main.h"
 #include "triangleSolver.h"
+#include "rectangleSolver.h"
 
 int side = 0;
 
@@ -15,6 +16,11 @@ int main() {
 
 		switch (shapeChoice)
 		{
+		case 2: 
+			printf_s("Rectangle selected.\n");
+
+		break; 
+
 		case 1:
 			printf_s("Triangle selected.\n");
 			int triangleSides[3] = { 0, 0, 0 };
@@ -43,6 +49,7 @@ void printWelcome() {
 }
 
 int printShapeMenu() {
+	printf_s("2. Rectangle\n");
 	printf_s("1. Triangle\n");
 	printf_s("0. Exit\n");
 
