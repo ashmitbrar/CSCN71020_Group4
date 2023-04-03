@@ -2,12 +2,12 @@
 #include <stdbool.h>
 #include "MakeRectangle.h"
 
-char* MakeRectangle(int a, int a2, int b, int b2)
+int* MakeRectangle(int a, int a2, int b, int b2)
 {
 	int parameter, area;
 
-	//printf("Enter four numbers to form a rectangle:\n");
-	//scanf_s("%i %i %i %i", &a, &a2, &b,&b2);
+	/*printf("Enter four numbers to form a rectangle:\n");
+	scanf_s("%i %i %i %i", &a, &a2, &b,&b2);*/
 	
 	if (a == a2 && b == b2)
 	{

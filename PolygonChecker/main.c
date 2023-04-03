@@ -1,3 +1,4 @@
+#define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 #include <stdbool.h>
 
@@ -74,11 +75,11 @@ int* getTriangleSides(int* TriangleSides) {
 	return TriangleSides;
 }
 
-int getRectangleSides(char* RectangleSides) {
+int* getRectangleSides(int* RectangleSides) {
 	printf_s("Enter the four sides for the rectangle: ");
 	for (int i = 0; i < 4; i++)
 	{
-		scanf_s("%d", &RectangleSides[i]);
+		scanf("%d", &RectangleSides[i]);
 	}
 	return RectangleSides;
 }
