@@ -3,6 +3,7 @@
 
 #include "main.h"
 #include "triangleSolver.h"
+#include "MakeRectangle.h"
 
 int side = 0;
 
@@ -22,8 +23,15 @@ int main() {
 			//printf_s("! %d\n", triangleSidesPtr[0]);
 			char* result = analyzeTriangle(triangleSidesPtr[0], triangleSidesPtr[1], triangleSidesPtr[2]);
 			printf_s("%s\n", result);
-
 			break;
+		case 2:
+			printf_s("Rectangle selected.\n");
+			int RectangleSides[4] = { 0,0,0,0 };
+			int* RectangleSidesPtr = getRectangleSides(RectangleSides);
+			char* result2 = MakeRectangle(RectangleSidesPtr[0], RectangleSidesPtr[1], RectangleSidesPtr[2], RectangleSidesPtr[3]);
+			printf_s("%s\n", result2);
+			break;
+
 		case 0:
 			continueProgram = false;
 			break;
@@ -46,6 +54,7 @@ void printWelcome() {
 
 int printShapeMenu() {
 	printf_s("1. Triangle\n");
+	printf_s("2. Rectangle\n");
 	printf_s("0. Exit\n");
 
 	int shapeChoice;
@@ -63,4 +72,13 @@ int* getTriangleSides(int* TriangleSides) {
 		scanf_s("%d", &TriangleSides[i]);
 	}
 	return TriangleSides;
+}
+
+int getRectangleSides(char* RectangleSides) {
+	printf_s("Enter the four sides for the rectangle: ");
+	for (int i = 0; i < 4; i++)
+	{
+		scanf_s("%d", &RectangleSides[i]);
+	}
+	return RectangleSides;
 }
