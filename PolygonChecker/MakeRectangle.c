@@ -13,7 +13,7 @@ int* MakeRectangle(int x1, int y1, int x2, int y2, int x3, int y3,int x4, int y4
 
 	if (a == c && b == d)
 	{
-		printf("The given numbers create a rectangle");
+		printf("The given numbers create a rectangle\n");
 		parameter = a + c + b + d;
 		area = a * b;
 		printf("parameter: %i\n area: %i\n", parameter, area);
