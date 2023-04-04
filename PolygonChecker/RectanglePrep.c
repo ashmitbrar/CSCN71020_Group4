@@ -21,9 +21,9 @@ int* RectanglePrep(int x1, int y1, int x2, int y2, int x3, int y3, int x4, int y
 	}
 	else
 	{
-		printf("The given numbers do NOT create a rectangle");
+		printf("The given numbers do NOT create a rectangle\n");
 		perimeter = a + c + b + d;
-		printf("parameter: %i", perimeter);
+		printf("perimeter: %i", perimeter);
 	}
 
 	return 0;

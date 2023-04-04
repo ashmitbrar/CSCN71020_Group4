@@ -140,12 +140,13 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="main.c" />
-    <ClCompile Include="Rectangle.c" />
+    <ClCompile Include="RectanglePrep.c" />
     <ClCompile Include="triangleSolver.c" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="source.h" />
     <ClInclude Include="Header.h" />
-    <ClInclude Include="Rectangle.h" />
+    <ClInclude Include="RectanglePrep.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
