@@ -34,10 +34,15 @@ char* analyzeTriangle(float side1, float side2, float side3)
 	angle3 = (180 / pi) * asin(side3 / (2 * R));
 
 
+
+	//printf("Sides:  %d %d %d\n", side1, side2, side3);
+	//printf("Angles: %6.2f %6.2f %6.2f\n", angle1, angle2, angle3);
+
+
 	if (side1 <= 0 && side2 <= 0 && side3 <= 0)
 	{
 		printf("The given sides does not create a triangle\n");
-
+		 
 
 	}
 	else if (side1 + side2 <= side3 || side1 + side3 <= side2 || side2 + side3 <= side1)
@@ -54,18 +59,16 @@ char* analyzeTriangle(float side1, float side2, float side3)
 
 	return result;
 };
-struct Rectangle
-{
-	int length;
-	int breadth;
-};
-int main()
-{
-	struct Rectangle r = { 10, 5 };
-	r.length = 20;
-	r.breadth = 30;
-}
 
-
-
+//struct Rectangle
+//{
+//	int length;
+//	int breadth;
+//};
+//int main()
+//{
+//	struct Rectangle r = { 10, 5 };
+//	r.length = 20;
+//	r.breadth = 30;
+//}
 
