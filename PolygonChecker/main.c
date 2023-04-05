@@ -1,3 +1,5 @@
+//group4-project to determine triangle and rectangle 
+
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 #include <stdbool.h>
@@ -84,13 +86,3 @@ int* getTriangleSides(int* TriangleSides) {
 	}
 	return TriangleSides;
 }
-
-//int* getRectangleSides(int* RectangleSides) {
-//	
-//
-//	for (int i = 0; i < 4; i++)
-//	{
-//		scanf_s("%d", &RectangleSides[i]);
-//	}
-//	return RectangleSides;
-//}
