@@ -1,4 +1,5 @@
-//group4-project to determine triangle and rectangle 
+//Group 4-project to determine triangle and rectangle 
+
 
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
