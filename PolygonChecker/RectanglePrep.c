@@ -1,3 +1,6 @@
+//program to input points and determine sides, perimeter and area if rectangle
+//MaryaI- prog71020 - w23 - GroupProject
+
 #include <stdio.h>
 #include <stdbool.h>
 #include "RectanglePrep.h"
