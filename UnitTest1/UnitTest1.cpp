@@ -11,18 +11,26 @@ namespace UnitTest1
 
 		TEST_METHOD(UnitTest1)
 		{
-			int side1 = 23, side2 = 33, side3 = 23;
+			int side1 = 6, side2 = 8, side3 = 10;
+			float angle1, angle2, angle3, R, s, pi, area;
+			pi = acos(-1);
 
-			char* result1 = "";
+			s = (side1 + side2 + side3) / 2;
+			area = sqrt(s * (s - side1) * (s - side2) * (s - side3));
 
-			if ((side1 == side2 && side1 != side3) ||
-				(side1 == side3 && side1 != side2))
-			{
-				result1 = "Isosceles triangle";
-				Assert::AreEqual(result1, result1);
-			}
+			R = (side1 * side2 * side3) / (4 * area);
 
+			angle1 = (180 / pi) * asin(side1 / (2 * R));
+			angle2 = (180 / pi) * asin(side2 / (2 * R));
+			angle3 = (180 / pi) * asin(side3 / (2 * R));
 
+			float expectedAngle1 = 36.87f;
+			float expectedAngle2 = 53.13f;
+			float expectedAngle3 = 90.00f;
+
+			Assert::AreEqual(expectedAngle1, angle1, 0.01f);
+			Assert::AreEqual(expectedAngle2, angle2, 0.01f);
+			Assert::AreEqual(expectedAngle3, angle3, 0.01f);
 		}
 		TEST_METHOD(UnitTest2)
 		{
