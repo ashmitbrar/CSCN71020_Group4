@@ -27,10 +27,20 @@ int main() {
 			break;
 		case 2:
 			printf_s("Rectangle selected.\n");
-			int RectangleSides[4] = { 0,0,0,0 };
-			int* RectangleSidesPtr = getRectangleSides(RectangleSides);
-			char* result2 = MakeRectangle(RectangleSidesPtr[0], RectangleSidesPtr[1], RectangleSidesPtr[2], RectangleSidesPtr[3]);
-			printf_s("%s\n", result2);
+			int x1, y1, x2, y2, x3, y3, x4, y4;
+			printf_s("Enter the first point:\n ");
+			printf_s("x1,y1 :");
+			scanf_s("%d %d", &x1, &y1);
+			printf_s("Enter the second point:\n");
+			printf_s("x2,y2 :");
+			scanf_s("%d %d", &x2, &y2);
+			printf_s("Enter the third point:\n");
+			printf_s("x3,y3 :\n");
+			scanf_s("%d %d", &x3, &y3);
+			printf_s("Enter the fourth point:\n");
+			printf_s("x4,y4 :\n");
+			scanf_s("%d %d", &x4, &y4);
+			MakeRectangle(x1, y1, x2, y2, x3, y3, x4, y4);
 			break;
 
 		case 0:
@@ -73,13 +83,4 @@ int* getTriangleSides(int* TriangleSides) {
 		scanf_s("%d", &TriangleSides[i]);
 	}
 	return TriangleSides;
-}
-
-int* getRectangleSides(int* RectangleSides) {
-	printf_s("Enter the four sides for the rectangle: ");
-	for (int i = 0; i < 4; i++)
-	{
-		scanf("%d", &RectangleSides[i]);
-	}
-	return RectangleSides;
 }
