@@ -26,9 +26,9 @@ namespace UnitTest1
 
         {
             // Equilateral triangle
-            float side1 = 30.0;
-            float side2 = 30.0;
-            float side3 = 30.0;
+            float angle1 = 30.0f;
+            float angle2 = 30.0f;
+            float angle3 = 30.0f;
             float R = 1.0;
             float s = 45;                //45
             float pi = acos(-1);
