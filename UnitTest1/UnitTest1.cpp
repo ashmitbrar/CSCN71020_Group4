@@ -25,7 +25,7 @@ namespace UnitTest1
 			angle3 = (180 / pi) * asin(side3 / (2 * R));
 
 			float expectedAngle1 = 36.87f;
-			float expectedAngle2 = 53.13f;
+			float expectedAngle2 = 53.13f; 
 			float expectedAngle3 = 90.00f;
 
 			Assert::AreEqual(expectedAngle1, angle1, 0.01f);
