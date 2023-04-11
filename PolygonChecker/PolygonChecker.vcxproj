@@ -141,13 +141,17 @@
   <ItemGroup>
     <ClCompile Include="main.c" />
     <ClCompile Include="RectangleFormation.c" />
-    <ClCompile Include="Source.c" />
     <ClCompile Include="triangleSolver.c" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="main.h" />
     <ClInclude Include="RectangleFormation.h" />
     <ClInclude Include="triangleSolver.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\testTriangleInsideAngle\testTriangleInsideAngle.vcxproj">
+      <Project>{b63cded0-1730-4bb5-ae35-74ad61141156}</Project>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
