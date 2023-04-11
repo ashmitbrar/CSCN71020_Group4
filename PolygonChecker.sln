@@ -5,27 +5,9 @@ VisualStudioVersion = 17.4.33213.308
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PolygonChecker", "PolygonChecker\PolygonChecker.vcxproj", "{2328FAE1-A1BF-420F-9F0C-C7CCC7F13314}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Rectangle Native Case", "Rectangle Native Case", "{AF07208D-E28D-4ACD-86D7-8C192BDFE89C}"
-	ProjectSection(SolutionItems) = preProject
-		Rectangle-UnitTest\pch.cpp = Rectangle-UnitTest\pch.cpp
-		Rectangle-UnitTest\pch.h = Rectangle-UnitTest\pch.h
-		Rectangle-UnitTest\Rectangle-UnitTest.cpp = Rectangle-UnitTest\Rectangle-UnitTest.cpp
-		Rectangle-UnitTest\Rectangle-UnitTest.vcxproj = Rectangle-UnitTest\Rectangle-UnitTest.vcxproj
-		Rectangle-UnitTest\Rectangle-UnitTest.vcxproj.filters = Rectangle-UnitTest\Rectangle-UnitTest.vcxproj.filters
-		Rectangle-UnitTest\Rectangle-UnitTest.vcxproj.user = Rectangle-UnitTest\Rectangle-UnitTest.vcxproj.user
-	EndProjectSection
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Triangle Native Case", "Triangle Native Case", "{6778A732-7094-46C6-8F70-D000CE8E426D}"
-	ProjectSection(SolutionItems) = preProject
-		Triangle-UnitTest\pch.cpp = Triangle-UnitTest\pch.cpp
-		Triangle-UnitTest\pch.h = Triangle-UnitTest\pch.h
-		Triangle-UnitTest\Triangle-UnitTest.cpp = Triangle-UnitTest\Triangle-UnitTest.cpp
-		Triangle-UnitTest\Triangle-UnitTest.vcxproj = Triangle-UnitTest\Triangle-UnitTest.vcxproj
-		Triangle-UnitTest\Triangle-UnitTest.vcxproj.filters = Triangle-UnitTest\Triangle-UnitTest.vcxproj.filters
-		Triangle-UnitTest\Triangle-UnitTest.vcxproj.user = Triangle-UnitTest\Triangle-UnitTest.vcxproj.user
-	EndProjectSection
-EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "testTriangleInsideAngle", "testTriangleInsideAngle\testTriangleInsideAngle.vcxproj", "{C5459DCD-4A88-4AF7-A769-E8D99BE5A921}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "RectangleTests", "RectangleTests\RectangleTests.vcxproj", "{D770518F-0DF9-493E-8AEA-80840510D4F5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +33,14 @@ Global
 		{C5459DCD-4A88-4AF7-A769-E8D99BE5A921}.Release|x64.Build.0 = Release|x64
 		{C5459DCD-4A88-4AF7-A769-E8D99BE5A921}.Release|x86.ActiveCfg = Release|Win32
 		{C5459DCD-4A88-4AF7-A769-E8D99BE5A921}.Release|x86.Build.0 = Release|Win32
+		{D770518F-0DF9-493E-8AEA-80840510D4F5}.Debug|x64.ActiveCfg = Debug|x64
+		{D770518F-0DF9-493E-8AEA-80840510D4F5}.Debug|x64.Build.0 = Debug|x64
+		{D770518F-0DF9-493E-8AEA-80840510D4F5}.Debug|x86.ActiveCfg = Debug|Win32
+		{D770518F-0DF9-493E-8AEA-80840510D4F5}.Debug|x86.Build.0 = Debug|Win32
+		{D770518F-0DF9-493E-8AEA-80840510D4F5}.Release|x64.ActiveCfg = Release|x64
+		{D770518F-0DF9-493E-8AEA-80840510D4F5}.Release|x64.Build.0 = Release|x64
+		{D770518F-0DF9-493E-8AEA-80840510D4F5}.Release|x86.ActiveCfg = Release|Win32
+		{D770518F-0DF9-493E-8AEA-80840510D4F5}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
