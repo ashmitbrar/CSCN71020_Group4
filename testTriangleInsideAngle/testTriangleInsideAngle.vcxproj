@@ -164,6 +164,7 @@
     </ClCompile>
     <ClCompile Include="RectangleTest.cpp" />
     <ClCompile Include="testTriangleInsideAngle.cpp" />
+    <ClCompile Include="TypeofTriangle.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="pch.h" />
