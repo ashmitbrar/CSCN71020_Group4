@@ -7,7 +7,7 @@ namespace RectangleUnitTest
 {
 	TEST_CLASS(RectangleUnitTest)
 	{
-	public:
+	public:  
 		
 		TEST_METHOD(TestMethod1)
 		{
