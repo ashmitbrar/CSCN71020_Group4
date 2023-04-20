@@ -9,55 +9,38 @@ namespace UnitTest1
     {
     public:
 
-     
-        TEST_METHOD(UnitTest1)
+    
+
+        TEST_METHOD(EquilateralTriangle)
         {
-            // equilateral triangle
-            
-            float side1 = 30;
-            float side2 = 30;
-            float side3 = 30;
-           /* getTriangleAngles(side1, side2, side3, &angle1, &angle2, &angle3);*/
             float angle1, angle2, angle3;
-            getTriangleAngles(side1, side2, side3, &angle1, &angle2, &angle3);
-            Assert::AreEqual(60.00f, angle1, 0.01f);
-            Assert::AreEqual(60.00f, angle2, 0.01f);
-            Assert::AreEqual(60.00f, angle3, 0.01f);
+            bool result = (30, 30, 30, &angle1, &angle2, &angle3);
+            Assert::IsTrue(result);
+            Assert::AreEqual(60.0f, angle1, 0.01f);
+            Assert::AreEqual(60.0f, angle2, 0.01f);
+            Assert::AreEqual(60.0f, angle3, 0.01f);
         }
-        TEST_METHOD(UnitTest2)
+
+        TEST_METHOD(IsoscelesTriangle)
         {
-            // equilateral triangle
-
-            float angle1 = 60.0f;
-            float angle2 = 60.0f;
-            float angle3 = 60.0;
-            float R = 1.0;
-            float pi = acos(-1);
-
-            //float angle3 = (180 / pi) * asin(sqrt(2) / (2 * R));
-
-            Assert::AreEqual(angle1, (180 / pi) * asin(1.0f / (2 * R)), 0.001f);
-            Assert::AreEqual(angle2, (180 / pi) * asin(1.0f / (2 * R)), 0.001f);
-            Assert::AreEqual(angle3, (180 / pi) * asin(1.0f / (2 * R)), 0.001f);
+            float angle1, angle2, angle3;
+            bool result = (30, 30, 40, &angle1, &angle2, &angle3);
+            Assert::IsTrue(result);
+            Assert::AreEqual(50.0f, angle1, 0.01f);
+            Assert::AreEqual(50.0f, angle2, 0.01f);
+            Assert::AreEqual(80.0f, angle3, 0.01f);
         }
-        TEST_METHOD(UnitTest3)
+
+        TEST_METHOD(ScaleneTriangle)
         {
-            // scalence triangle
-
-            float angle1 = 30.0f;
-            float angle2 = 40.0f;
-            float angle3 = 45;
-            float R = 1.0;
-            float pi = acos(-1);
-
-            //float angle3 = (180 / pi) * asin(sqrt(2) / (2 * R));
-
-            Assert::AreEqual(angle1, (180 / pi) * asin(1.0f / (2 * R)), 0.001f);
-            Assert::AreEqual(angle2, (180 / pi) * asin(1.0f / (2 * R)), 0.001f);
-            Assert::AreEqual(angle3, (180 / pi) * asin(1.0f / (2 * R)), 0.001f);
+            float angle1, angle2, angle3;
+            bool result =(30, 40, 50, &angle1, &angle2, &angle3);
+            Assert::IsTrue(result);
+            Assert::AreEqual(36.87f, angle1, 0.01f);
+            Assert::AreEqual(53.13f, angle2, 0.01f);
+            Assert::AreEqual(90.00f, angle3, 0.01f);
         }
 
     };
-
 
 }

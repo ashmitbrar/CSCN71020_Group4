@@ -58,4 +58,3 @@ void getTriangleAngles(int side1, int side2, int side3, float* angle1, float* an
 	*angle2 = acos(cosB) * 180.0 / M_PI;
 	*angle3 = acos(cosC) * 180.0 / M_PI;
 }
-

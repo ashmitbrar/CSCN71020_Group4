@@ -1,10 +1,7 @@
-//Group 4-project to determine triangle and rectangle 
-
-
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 #include <stdbool.h>
-#include <math.h>
+
 #include "main.h"
 #include "triangleSolver.h"
 #include "MakeRectangle.h"
@@ -33,17 +30,17 @@ int main() {
 			int x1, y1, x2, y2, x3, y3, x4, y4;
 			printf_s("Enter the first point:\n ");
 			printf_s("x1,y1 :");
-			scanf_s("%d,%d", &x1,&y1);
+			scanf_s("%d %d", &x1, &y1);
 			printf_s("Enter the second point:\n");
 			printf_s("x2,y2 :");
-			scanf_s("%d,%d", &x2,&y2);
+			scanf_s("%d %d", &x2, &y2);
 			printf_s("Enter the third point:\n");
 			printf_s("x3,y3 :\n");
-			scanf_s("%d,%d", &x3,&y3);
+			scanf_s("%d %d", &x3, &y3);
 			printf_s("Enter the fourth point:\n");
 			printf_s("x4,y4 :\n");
-			scanf_s("%d,%d", &x4,&y4);
-			MakeRectangle(x1, y1, x2, y2, x3, y3, x4, y4);			
+			scanf_s("%d %d", &x4, &y4);
+			MakeRectangle(x1, y1, x2, y2, x3, y3, x4, y4);
 			break;
 
 		case 0:
